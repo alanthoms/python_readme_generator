@@ -1,10 +1,10 @@
-# Alan Readme mamker
+# Python ReadMe Generator
 
-puyjhon readme generator
+Simple Python ReadMe Generator for Week 7 Assignment
 
-vemv and pip install
+NA
 
-not avilable
+NA
 
 Unlicense
 
