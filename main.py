@@ -11,7 +11,12 @@ from questions import ask_questions
 from write_readme import write_to_readme
 
 answers = ask_questions()
-write_to_readme(answers)
+
+try:
+    write_to_readme(answers)
+    print("ReadMe File Generated")
+except:
+    print("Something went wrong")
 
 
 

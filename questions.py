@@ -8,19 +8,19 @@ import time
 
 def ask_questions():
     userinput = [
-    {"type": "input", "name": "name", "message": "Enter Project Title?"},
-    {"type": "input", "name": "description", "message": "Enter Project Description"},
+    {"type": "input", "name": "name", "message": "Enter Project Title?", "validate": lambda result: len(result.strip()) > 0, "invalid_message" : "Title cannot be empty"},
+    {"type": "input", "name": "description", "message": "Enter Project Description",  "validate": lambda result: len(result.strip()) > 0, "invalid_message" : "Description cannot be empty"},
     {"type": "input", "name": "instructions", "message": "Enter Project Installation Instructions"},
     {"type": "input", "name": "usage", "message": "Enter Project Usage Information"},
     {
             "type": "list",
-            "name": "license",
+            "name": "license", 
             "message": "Select an action:",
             "choices": ["Unlicense", "MIT License", "Apache License 2.0", "BSD 2-Clause ", "BSD 3-Clause ", "ISC License", "GNU GPLv3"],
             "default": "Unlicense",
         },
 
-    {"type": "input", "name": "author", "message": "Enter Author Name"},
+    {"type": "input", "name": "author", "message": "Enter Author Name",  "validate": lambda result: len(result.strip()) > 0, "invalid_message" : "Author name cannot be empty"},
     {"type": "input", "name": "contact", "message": "Enter Contact Information"},
     ]
     answers = prompt(userinput)

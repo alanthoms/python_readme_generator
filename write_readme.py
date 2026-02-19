@@ -11,7 +11,7 @@ import os
 
 def write_to_readme(answers):
     documents_path = os.path.expanduser("./")
-    with open(os.path.join(documents_path, "README.md"),"w") as writer:
+    with open(os.path.join(documents_path, "READMENEW.md"),"w") as writer:
         writer.write(f"# {answers['name']}\n\n")
         writer.write(f"{answers['description']}\n\n")
         writer.write(f"{answers['instructions']}\n\n")
