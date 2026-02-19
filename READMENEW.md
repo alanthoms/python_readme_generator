@@ -1,14 +1,14 @@
-# Python ReadMe Generator
+# READMe Generator
 
-Simple readme generator project
+Simple Python ReadMe Generator
 
-use venv and requirements.txt
+use venv and pip install requirements.txt
 
-wherever
+Wherever
 
 Unlicense
 
 ## Alan Thomas
 
-## alanthoms
+## alanthoms on github
 
